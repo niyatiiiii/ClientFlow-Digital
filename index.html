@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClientFlow Digital — Manage Brands. Track Performance. Grow Digitally.</title>
+  <meta name="description" content="ClientFlow Digital is a client management dashboard for digital marketing agencies — track clients, campaigns, social accounts and performance in one place.">
+  <meta name="keywords" content="digital marketing agency, client management dashboard, social media management, SEO, Google Ads, campaign reporting">
+  <meta name="author" content="ClientFlow Digital">
+  <link rel="canonical" href="https://clientflow-digital.vercel.app/index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ClientFlow Digital — Manage Brands. Track Performance. Grow Digitally.">
+  <meta property="og:description" content="A premium client management dashboard for digital marketing agencies.">
+  <meta property="og:image" content="assets/images/og-cover.jpg">
+  <meta property="og:url" content="https://clientflow-digital.vercel.app/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ClientFlow Digital">
+  <meta name="twitter:description" content="Manage Brands. Track Performance. Grow Digitally.">
+  <meta name="twitter:image" content="assets/images/og-cover.jpg">
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Search Console verification placeholder -->
+  <!-- Replace YOUR_CODE below with the verification string from
+       https://search.google.com/search-console -->
+  <meta name="google-site-verification" content="YOUR_CODE">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ============================================================
+       GOOGLE ANALYTICS 4 — PLACEHOLDER
+       1. Go to https://analytics.google.com
+       2. Create a GA4 property for this site
+       3. Admin > Data Streams > Web > copy the Measurement ID (starts with "G-")
+       4. Replace G-XXXXXXXXXX in BOTH lines below with your real ID
+       ============================================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // <-- Replace with your GA4 Measurement ID
+  </script>
+
+  <!-- ============================================================
+       MICROSOFT CLARITY — PLACEHOLDER
+       1. Go to https://clarity.microsoft.com
+       2. Create a project for this site
+       3. Copy your Project ID from Settings > Setup
+       4. Replace YOUR_PROJECT_ID below
+       ============================================================ -->
+  <script>
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_PROJECT_ID"); // <-- Replace with your Clarity Project ID
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ClientFlow Digital",
+    "url": "https://clientflow-digital.vercel.app/",
+    "logo": "assets/images/logo.png",
+    "description": "Client management dashboard for digital marketing agencies.",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-mark">CF</div>
+  </div>
+
+  <!-- Mobile top navigation -->
+  <header class="topnav">
+    <div class="brand">
+      <div class="brand-mark">CF</div>
+      <div class="brand-name">ClientFlow<span>Digital</span></div>
+    </div>
+    <button class="menu-toggle" data-menu-toggle aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </header>
+
+  <div class="mobile-drawer" data-mobile-drawer id="mobile-drawer">
+    <div class="mobile-drawer-panel">
+      <div class="brand">
+        <div class="brand-mark">CF</div>
+        <div class="brand-name">ClientFlow<span>Digital</span></div>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav-link>Dashboard</a></li>
+          <li><a href="clients.html" data-nav-link>Clients</a></li>
+          <li><a href="analytics.html" data-nav-link>Analytics</a></li>
+          <li><a href="reports.html" data-nav-link>Reports</a></li>
+          <li><a href="contact.html" data-nav-link>Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-outline btn-sm" data-drawer-close style="align-self:flex-start;">Close</button>
+    </div>
+  </div>
+
+  <div class="app-shell">
+    <!-- Desktop sidebar -->
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand">
+        <div class="brand-mark">CF</div>
+        <div class="brand-name">ClientFlow<span>Digital</span></div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav-link aria-current="page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="2"/><rect x="14" y="3" width="7" height="5" rx="2"/><rect x="14" y="12" width="7" height="9" rx="2"/><rect x="3" y="16" width="7" height="5" rx="2"/></svg>
+            Dashboard
+          </a></li>
+          <li><a href="clients.html" data-nav-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Clients
+          </a></li>
+          <li><a href="analytics.html" data-nav-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg>
+            Analytics
+          </a></li>
+          <li><a href="reports.html" data-nav-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
+            Reports
+          </a></li>
+          <li><a href="contact.html" data-nav-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity="0"/><path d="m3 7 9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+            Contact
+          </a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        © 2026 ClientFlow Digital.<br>Built for a Digital Marketing project.
+      </div>
+    </aside>
+
+    <main class="main-content" id="main-content">
+      <!-- Hero -->
+      <section class="hero reveal">
+        <div class="hero-content">
+          <span class="hero-badge"><span class="dot"></span> 12 active client accounts</span>
+          <h1>Manage Your Clients Like a Professional Agency.</h1>
+          <p>ClientFlow Digital brings every brand, campaign, social account and report into a single dashboard — so your team spends less time switching tabs and more time driving results.</p>
+          <div class="hero-actions">
+            <a href="clients.html" class="btn btn-primary">View Clients</a>
+            <a href="analytics.html" class="btn btn-outline">View Analytics</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="dashboard-illustration">
+            <div class="float-card card-a">
+              <div class="mini-label">Monthly Reach</div>
+              <div class="mini-value">2.3M</div>
+              <div class="mini-bars">
+                <span style="height:40%"></span><span style="height:65%"></span><span style="height:50%"></span>
+                <span style="height:85%"></span><span style="height:60%"></span><span style="height:95%"></span>
+              </div>
+            </div>
+            <div class="float-card card-b">
+              <div class="mini-label">Client Retention</div>
+              <div class="mini-value">91%</div>
+            </div>
+            <div class="float-card card-c">
+              <div class="mini-label">Active Campaigns</div>
+              <div class="mini-value">48</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats-grid" aria-label="Agency statistics">
+        <div class="glass-card stat-card reveal">
+          <div class="stat-value"><span data-counter="12" data-suffix="">0</span></div>
+          <div class="stat-label">Active Clients</div>
+        </div>
+        <div class="glass-card stat-card reveal">
+          <div class="stat-value"><span data-counter="48" data-suffix="">0</span></div>
+          <div class="stat-label">Campaigns</div>
+        </div>
+        <div class="glass-card stat-card reveal">
+          <div class="stat-value"><span data-counter="2.3" data-decimals="1" data-suffix="M">0</span></div>
+          <div class="stat-label">Reach</div>
+        </div>
+        <div class="glass-card stat-card reveal">
+          <div class="stat-value"><span data-counter="91" data-suffix="%">0</span></div>
+          <div class="stat-label">Client Retention</div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="reveal-section" aria-labelledby="services-heading">
+        <div class="section-heading reveal">
+          <div>
+            <h2 id="services-heading">What We Manage For Clients</h2>
+            <p>A full-service toolkit, tracked in one place from first strategy call to monthly report.</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <div class="glass-card service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+            <h3>Social Media Management</h3>
+            <p>Content calendars, publishing and community management across Instagram, Facebook, LinkedIn, X and YouTube.</p>
+          </div>
+          <div class="glass-card service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <h3>SEO</h3>
+            <p>Keyword strategy, on-page optimization and Search Console monitoring to grow organic visibility.</p>
+          </div>
+          <div class="glass-card service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <h3>Google Ads</h3>
+            <p>Search, Display and Performance Max campaigns managed and optimized against ROAS targets.</p>
+          </div>
+          <div class="glass-card service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v6h4v-6h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg></div>
+            <h3>Meta Ads</h3>
+            <p>Full-funnel Facebook and Instagram ad management, from awareness creative to retargeting.</p>
+          </div>
+          <div class="glass-card service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 4v5h5"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+            <h3>Content Marketing</h3>
+            <p>Blog, video and creative production that supports SEO and paid campaigns across every channel.</p>
+          </div>
+          <div class="glass-card service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg></div>
+            <h3>Analytics Reporting</h3>
+            <p>GA4, Clarity and custom dashboards translated into monthly reports clients actually understand.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Clients -->
+      <section class="reveal-section" aria-labelledby="clients-heading">
+        <div class="section-heading reveal">
+          <div>
+            <h2 id="clients-heading">Featured Clients</h2>
+            <p>A snapshot of premium brands currently active on ClientFlow Digital.</p>
+          </div>
+          <a href="clients.html" class="btn btn-outline btn-sm">View all clients</a>
+        </div>
+        <div class="clients-grid-home" data-featured-clients></div>
+      </section>
+
+      <footer class="site-footer">
+        <span>© 2026 ClientFlow Digital. University Digital Marketing Project.</span>
+        <span>Built with HTML, CSS, JavaScript &amp; Chart.js</span>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Client Modal -->
+  <div class="modal-overlay" data-modal-overlay aria-hidden="true" role="dialog" aria-modal="true" aria-label="Client details">
+    <div class="modal-box">
+      <button class="modal-close" data-modal-close aria-label="Close client details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      </button>
+      <div data-modal-body></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
